@@ -1,0 +1,19 @@
+create table employee6(empno number(5),ename varchar2(10),job varchar2(20),mgr number(10),sal number(10));
+describe employee6;
+insert into employee6 values(101,'Arya','Dean',100,100000);
+insert into employee6 values(102,'Ashu','HOD',100,100000000);
+insert into employee6 values(103,'Biswa','peon',100,10);
+insert into employee6 values(104,'Rakesh','teacher',100,100);
+insert into employee6 values(105,'Subh','faculty',100,0);
+select * from employee6;
+alter table employee6 add(commission number);
+select * from employee6;
+update employee6 set job='teacher' where empno=103;
+select * from employee6;
+alter table employee6 rename column mgr to manager_no;
+select * from employee6;
+delete employee6 where empno=105;
+select * from employee6;
+update employee6 set ename='papu' where empno=104;
+
+select * from employee6;
